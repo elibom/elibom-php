@@ -83,8 +83,8 @@ $elibom->unscheduleMessage('<schedule_id>');
 ```php
 //Return json array
 $users = $elibom->getUsers();
-for($users as $user) {
-    echo json_encode($user);
+foreach($users as $user) {
+        echo json_encode($user);
 }
 ```
 
