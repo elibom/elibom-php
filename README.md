@@ -1,4 +1,3 @@
-
 <h1>Elibom PHP API Client</h1>
 ==========
 
@@ -22,9 +21,11 @@ cURL (apt-get install php5-curl)
 
 2. Create an ElibomRestClient object passing your credentials:
 
+    ```php
     require('elibom/elibom.php');
 
     $elibom = new ElibomClient('your.email@domain','your_api_token');
+    ```
     
     Note: You can find your api password at http://www.elibom.com/api-password (make sure you are logged in).
     
