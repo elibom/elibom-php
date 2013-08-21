@@ -4,7 +4,7 @@
     http://pear.php.net/dtd/package-2.0
     http://pear.php.net/dtd/package-2.0.xsd">
  <name>ElibomClient</name>
- <uri>file:///MyProject-packages/package.xml</uri>
+ <uri>http://github.com/elibom/elibom-php</uri>
  <summary>this is a wrapper package for installing dependencies for ElibomClient</summary>
  <description>&lt;none&gt;</description>
  <lead>
@@ -13,8 +13,8 @@
   <email>charlesandrew621@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2013-07-31</date>
- <time>15:26:09</time>
+ <date>2013-08-21</date>
+ <time>15:52:09</time>
  <version>
   <release>0.0.1</release>
   <api>0.0.1</api>
@@ -32,9 +32,15 @@
    <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/elibom.php" role="php" />
    <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/client.php" role="php" />
    <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/message.php" role="php" />
-  <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/resource.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/resource.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/resource.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/account.php" role="php" />     
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/delivery.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/scheduler.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/user.php" role="php" />
   </dir>
  </contents>
+
  <dependencies>
   <required>
    <php>
