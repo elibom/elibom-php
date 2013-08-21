@@ -12,11 +12,11 @@ cURL (apt-get install php5-curl)
 
 1. Install
 
-    pear install https://github.com/carlossepulveda/elibom-php/raw/master/download/ElibomClient-0.0.1.tgz
-    
+    pear install https://github.com/elibom/elibom-php/releases/download/0.1/ElibomClient-0.0.1.tgz
+
     or
     
-    download sources files https://github.com/carlossepulveda/elibom-php/raw/master/download/ElibomSRC.zip and decompress
+    download sources files https://github.com/elibom/elibom-php/releases/download/src/ElibomSRC.zip and decompress
     in your project folder.
 
 2. Create an ElibomRestClient object passing your credentials:
@@ -58,7 +58,7 @@ $delivery = $elibom->getDelivery('<delivery_token>');
 ### Schedule SMS 
 ```php
 //Return string
-$scheduleId  = $elibom->scheduleMessage('3204470262', 'Test PHP', 'dd/MM/yyyy hh:mm');
+$scheduleId  = $elibom->scheduleMessage('3201111111', 'Test PHP', 'dd/MM/yyyy hh:mm');
 ```
 
 ### List Scheduled SMS Messages
