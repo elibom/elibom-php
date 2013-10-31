@@ -12,7 +12,7 @@ cURL (apt-get install php5-curl)
 
 1. Install
 
-    pear install https://github.com/elibom/elibom-php/releases/download/0.1/ElibomClient-0.0.1.tgz
+    pear install https://github.com/elibom/elibom-php/raw/master/download/ElibomClient-0.0.1.tgz
 
     or
     
