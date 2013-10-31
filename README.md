@@ -16,7 +16,7 @@ cURL (apt-get install php5-curl)
 
     or
     
-    download sources files https://github.com/elibom/elibom-php/releases/download/src/ElibomSRC.zip and decompress
+    download sources files https://github.com/elibom/elibom-php/releases/download/0.1/ElibomSRC.zip and decompress
     in your project folder.
 
 2. Create an ElibomRestClient object passing your credentials:

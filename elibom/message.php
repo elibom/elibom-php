@@ -7,7 +7,7 @@
             $data = array("destinations" => $to, "text" => $txt);
             $response = $client->post('messages', $data);
 
-            return $response;
+            return $response->deliveryToken;
         }
     }
 ?>
