@@ -2,7 +2,7 @@
 
     class Client extends Resource {
 
-        private $url = 'http://www.elibom.com/';
+        private $url = 'https://www.elibom.com/';
 
         public function post($resource, $data) {
             $data_string = json_encode($data);
