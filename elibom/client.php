@@ -85,7 +85,7 @@
         private function getErrorMessage($code, $resource) {
             switch($code) {
                 case 0 : {
-                    return 'Server not found, check your internet connection or proxy configuration.'
+                    return 'Server not found, check your internet connection or proxy configuration.';
                 }
                 case 401 : {
                     return 'Unauthorized resource [' . $resource . ']. Check your user credentials';
