@@ -11,6 +11,7 @@
 
             curl_setopt($handler, CURLOPT_POST, true);
             curl_setopt($handler, CURLOPT_RETURNTRANSFER, true); 
+            curl_setopt($handler, CURLOPT_SSL_VERIFYPEER, false);
 
             $this->configureHeaders($handler, $data_string);
 
@@ -34,6 +35,7 @@
             //curl_setopt($handler, CURLOPT_GET, true);
             curl_setopt($handler, CURLOPT_CUSTOMREQUEST, "GET");
             curl_setopt($handler, CURLOPT_RETURNTRANSFER, true); 
+            curl_setopt($handler, CURLOPT_SSL_VERIFYPEER, false);
 
             $this->configureHeaders($handler, $data_string);
 
@@ -56,6 +58,7 @@
 
             curl_setopt($handler, CURLOPT_CUSTOMREQUEST, 'DELETE');
             curl_setopt($handler, CURLOPT_RETURNTRANSFER, true); 
+            curl_setopt($handler, CURLOPT_SSL_VERIFYPEER, false);
 
             $this->configureHeaders($handler, $data_string);
 
