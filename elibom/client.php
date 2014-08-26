@@ -81,7 +81,7 @@
                 'Authorization: Basic ' . $auth,
                 'Content-Type: application/json',
                 'Content-Length: ' . strlen($data_string),
-                'X-API-Source: ' . 'php' 
+                'X-API-Source: ' . 'php-1.0.5' 
                 )
             );
         }

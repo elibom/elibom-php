@@ -13,11 +13,11 @@
   <email>charlesandrew621@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2014-04-07</date>
- <time>11:05:00</time>
+ <date>2014-08-25</date>
+ <time>23:50:00</time>
  <version>
-  <release>0.0.1</release>
-  <api>0.0.1</api>
+  <release>1.0.5</release>
+  <api>1.0.5</api>
  </version>
  <stability>
   <release>alpha</release>
@@ -55,14 +55,14 @@
  <changelog>
   <release>
    <version>
-    <release>0.0.1</release>
-    <api>0.0.1</api>
+    <release>1.0.5</release>
+    <api>1.0.5</api>
    </version>
    <stability>
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2014-04-07</date>
+   <date>2014-08-25</date>
    <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
    <notes>
 &lt;none&gt;
