@@ -80,7 +80,8 @@
             curl_setopt($handler, CURLOPT_HTTPHEADER, array(
                 'Authorization: Basic ' . $auth,
                 'Content-Type: application/json',
-                'Content-Length: ' . strlen($data_string)
+                'Content-Length: ' . strlen($data_string),
+                'X-API-Source: ' . 'php' 
                 )
             );
         }
