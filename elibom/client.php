@@ -20,7 +20,7 @@
             $response = curl_exec ($handler);
             $code = curl_getinfo($handler, CURLINFO_HTTP_CODE);
             if ($code != 200) {
-                $errorMessage = $this->getErrorMessage($code, $resource);
+                $errorMessage = $this->getErrorMessage($handler, $resource);
                 throw new Exception($errorMessage);
             }
 
@@ -42,9 +42,8 @@
             curl_setopt($handler, CURLOPT_POSTFIELDS, $data_string);
 
             $response = curl_exec ($handler);
-            $code = curl_getinfo($handler, CURLINFO_HTTP_CODE);
             if ($code != 200) {
-                $errorMessage = $this->getErrorMessage($code, $resource);
+                $errorMessage = $this->getErrorMessage($handler, $resource);
                 throw new Exception($errorMessage);
             }
 
@@ -67,7 +66,7 @@
             $response = curl_exec ($handler);
             $code = curl_getinfo($handler, CURLINFO_HTTP_CODE);
             if ($code != 200) {
-                $errorMessage = $this->getErrorMessage($code, $resource);
+                $errorMessage = $this->getErrorMessage($handler, $resource);
                 throw new Exception($errorMessage);
             }
 
@@ -86,10 +85,12 @@
             );
         }
 
-        private function getErrorMessage($code, $resource) {
+        private function getErrorMessage($handler, $resource) {
+            $code = curl_getinfo($handler, CURLINFO_HTTP_CODE);
+            $error_description = curl_error($handler);
             switch($code) {
                 case 0 : {
-                    return 'Server not found, check your internet connection or proxy configuration.';
+                    return 'Server not found, check your internet connection or proxy configuration. [' . $error_description . ']';
                 }
                 case 401 : {
                     return 'Unauthorized resource [' . $resource . ']. Check your user credentials';
