@@ -42,6 +42,7 @@
             curl_setopt($handler, CURLOPT_POSTFIELDS, $data_string);
 
             $response = curl_exec ($handler);
+            $code = curl_getinfo($handler, CURLINFO_HTTP_CODE);
             if ($code != 200) {
                 $errorMessage = $this->getErrorMessage($handler, $resource);
                 throw new Exception($errorMessage);
