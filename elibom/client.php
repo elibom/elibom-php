@@ -4,6 +4,8 @@
 
         private $url = 'https://www.elibom.com/';
 
+        private $version = 'php-1.0.6';
+
         public function post($resource, $data) {
             $data_string = json_encode($data);
 
@@ -24,7 +26,7 @@
                 throw new Exception($errorMessage);
             }
 
-            return json_decode($response);
+            return json_decode(utf8_encode($response));
         }
 
         public function get($resource, $data = '{}') {
@@ -48,7 +50,7 @@
                 throw new Exception($errorMessage);
             }
 
-            return json_decode($response);
+            return json_decode(utf8_encode($response));
         }
 
         public function delete($resource, $data = '{}') {
@@ -71,7 +73,7 @@
                 throw new Exception($errorMessage);
             }
 
-            return json_decode($response);
+            return json_decode(utf8_encode($response));
         }
 
         private function configureHeaders($handler, $data_string) {
@@ -81,7 +83,7 @@
                 'Authorization: Basic ' . $auth,
                 'Content-Type: application/json',
                 'Content-Length: ' . strlen($data_string),
-                'X-API-Source: ' . 'php-1.0.5' 
+                'X-API-Source: ' . $this->version
                 )
             );
         }

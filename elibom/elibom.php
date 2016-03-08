@@ -11,9 +11,9 @@
 
     class ElibomClient extends Resource{
 
-        public function sendMessage($to, $txt) {
+        public function sendMessage($to, $txt, $campaign = null) {
             $message = new Message($this->user, $this->token);
-            $deliveryToken = $message->send($to, $txt);
+            $deliveryToken = $message->send($to, $txt, $campaign);
 
             return $deliveryToken;
         }
@@ -25,9 +25,9 @@
             return $deliveryData;
         }
 
-        public function scheduleMessage($to, $txt, $date) {
+        public function scheduleMessage($to, $txt, $date, $campaign = null) {
             $scheduler = new Scheduler($this->user, $this->token);
-            $scheduleId = $scheduler->schedule($to, $txt, $date);
+            $scheduleId = $scheduler->schedule($to, $txt, $date, $campaign);
 
             return $scheduleId;
         }
