@@ -49,6 +49,12 @@ cURL (apt-get install php5-curl)
 $deliveryId = $elibom->sendMessage('3201111111','PHP - TEST');
 ```
 
+### Send SMS with a campaign name
+```php
+//Return string
+$deliveryId = $elibom->sendMessage('3201111111','PHP - TEST', 'Campaign name');
+```
+
 ### Show Delivery
 ```php
 //Return json object
@@ -59,6 +65,12 @@ $delivery = $elibom->getDelivery('<delivery_token>');
 ```php
 //Return string
 $scheduleId  = $elibom->scheduleMessage('3201111111', 'Test PHP', 'dd/MM/yyyy hh:mm');
+```
+
+### Schedule SMS with a campaign name
+```php
+//Return string
+$scheduleId  = $elibom->scheduleMessage('3201111111', 'Test PHP', 'dd/MM/yyyy hh:mm', 'Campaign name');
 ```
 
 ### List Scheduled SMS Messages
