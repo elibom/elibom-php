@@ -24,7 +24,7 @@
                 throw new Exception($errorMessage);
             }
 
-            return json_decode($response);
+            return json_decode(utf8_encode($response));
         }
 
         public function get($resource, $data = '{}') {
@@ -48,7 +48,7 @@
                 throw new Exception($errorMessage);
             }
 
-            return json_decode($response);
+            return json_decode(utf8_encode($response));
         }
 
         public function delete($resource, $data = '{}') {
@@ -71,7 +71,7 @@
                 throw new Exception($errorMessage);
             }
 
-            return json_decode($response);
+            return json_decode(utf8_encode($response));
         }
 
         private function configureHeaders($handler, $data_string) {
