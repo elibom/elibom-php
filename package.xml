@@ -13,11 +13,11 @@
   <email>charlesandrew621@gmail.com</email>
   <active>yes</active>
  </lead>
- <date>2016-03-08</date>
- <time>12:50:00</time>
+ <date>2016-03-10</date>
+ <time>10:50:00</time>
  <version>
-  <release>1.0.6</release>
-  <api>1.0.6</api>
+  <release>1.1</release>
+  <api>1.1</api>
  </version>
  <stability>
   <release>stable</release>
@@ -29,15 +29,14 @@
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
-   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/elibom.php" role="php" />
-   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/client.php" role="php" />
-   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/message.php" role="php" />
-   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/resource.php" role="php" />
-   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/resource.php" role="php" />
-   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/account.php" role="php" />     
-   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/delivery.php" role="php" />
-   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/scheduler.php" role="php" />
-   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/user.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/src/elibom_client.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/src/api_client.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/src/resources/message_resource.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/src/resources/resource.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/src/resources/account_resource.php" role="php" />     
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/src/resources/delivery_resource.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/src/resources/schedule_resource.php" role="php" />
+   <file baseinstalldir="/" md5sum="d41d8cd98f00b204e9800998ecf8427e" name="elibom/src/resources/user_resource.php" role="php" />
   </dir>
  </contents>
 
@@ -55,14 +54,14 @@
  <changelog>
   <release>
    <version>
-    <release>1.0.5</release>
-    <api>1.0.5</api>
+    <release>1.1</release>
+    <api>1.1</api>
    </version>
    <stability>
     <release>stable</release>
     <api>stable</api>
    </stability>
-   <date>2016-03-08</date>
+   <date>2016-03-10</date>
    <license uri="http://www.gnu.org/licenses/lgpl.html">LGPL</license>
    <notes>
 &lt;none&gt;

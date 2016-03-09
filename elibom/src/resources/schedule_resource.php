@@ -1,35 +1,31 @@
 <?php
 
-    class Scheduler extends Resource{
+    namespace Elibom\APIClient\Resources;
+
+    class ScheduleResource extends Resource{
 
         public function schedule($to, $txt, $date, $campaign = null) {
-            $client = new Client($this->user, $this->token);
             $data = array("destinations" => $to, "text" => $txt, "scheduleDate" => $date);
             if (isset($campaign)) {
                 $data['campaign'] = $campaign;
             }
-            $response = $client->post('messages', $data);
+            $response = $this->apiClient->post('messages', $data);
 
             return $response->scheduleId;
         }
 
         public function get($id) {
-            $client = new Client($this->user, $this->token);
-            $response = $client->get('schedules/' . $id);
-
+            $response = $this->apiClient->get('schedules/' . $id);
             return $response;
         }
 
         public function getAll() {
-            $client = new Client($this->user, $this->token);
-            $response = $client->get('schedules/scheduled');
-
+            $response = $this->apiClient->get('schedules/scheduled');
             return $response;
         }
 
         public function unschedule($id) {
-            $client = new Client($this->user, $this->token);
-            $client->delete('schedules/' . $id);
+            $this->apiClient->delete('schedules/' . $id);
         }
     }
 ?>
