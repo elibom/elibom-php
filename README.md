@@ -12,17 +12,18 @@ cURL (apt-get install php5-curl)
 
 1. Install
 
-    pear install https://github.com/elibom/elibom-php/raw/master/download/ElibomClient-1.0.6.tgz
+    pear install https://github.com/elibom/elibom-php/raw/master/download/ElibomClient-1.1.tgz
 
     or
     
-    download sources files https://github.com/elibom/elibom-php/releases/download/1.0.6/ElibomSRC.zip and decompress
+    download sources files https://github.com/elibom/elibom-php/releases/download/1.1/ElibomSRC.zip and decompress
     in your project folder.
 
 2. Create an ElibomRestClient object passing your credentials:
 
     ```php
     require('elibom/elibom.php');
+    use Elibom\APIClient\ElibomClient as ElibomClient;
 
     $elibom = new ElibomClient('your.email@domain','your_api_token');
     ```
